@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap");
+
+* {
+  font-family: "Stalinist One", cursive;
+}
+
+body {
+  background-color: #070707;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.display {
+  background-color: whitesmoke;
+  width: 319px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.cal-container {
+  background-color: #755b69;
+  display: grid;
+  margin: 50px 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  height: 2%;
+  width: 10%;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+}
+
+button:hover {
+  transition: 0.2s;
+  background-color: #96c5b0;
+  border: 2px solid #755b69;
+}
+
+button:active {
+  background-color: #adf1d2;
+}
