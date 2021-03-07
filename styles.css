@@ -15,32 +15,32 @@ h1 {
 }
 
 .display {
-  background-color: whitesmoke;
-  width: 319px;
-  height: 40px;
-  margin-bottom: 10px;
+  background-color: white;
+  grid-column: span 4;
 }
+
+/* .display > .first-number {
+  display: flex;
+}
+
+.display > .second.number {
+  display: flex;
+  justify-content: flex-end;
+} */
 
 .cal-container {
-  background-color: #755b69;
   display: grid;
-  margin: 50px 500px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  grid-template-columns: repeat(4, 85px);
+  grid-template-rows: minmax(70px, auto) repeat(5, 85px);
+  margin: 40px 465px;
+  background-color: honeydew;
 }
 
-.btn-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  height: 2%;
-  width: 10%;
-}
-
-button {
-  width: 80px;
-  height: 80px;
-  font-size: 20px;
+.cal-container > .two-span {
+  grid-column: span 2;
 }
 
 button:hover {
@@ -51,4 +51,10 @@ button:hover {
 
 button:active {
   background-color: #adf1d2;
+}
+
+button {
+  font-size: 22px;
+  border: 1px solid black;
+  border-radius: 2px;
 }

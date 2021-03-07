@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="icon" type="image/png" href="/cal-pic-edited.png">
+    <link rel="icon" type="image/png" href="cal-pic-blackandwhite.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>JS Calculator</h1>
     <div class="cal-container">
-        <div class="display"></div>
-        <div class="btn-container">
-            <button class="multi">x</button>
-            <button class="divide">/</button>
-            <button class="plus">+</button>
-            <button class="minus">-</button>
-            <button class="seven">7</button>
-            <button class="eight">8</button>
-            <button class="nine">9</button>
-            <button class="clear long-btn">AC</button>
-            <button class="four">4</button>
-            <button class="five">5</button>
-            <button class="six">6</button>
-            <button class="clear long-btn">C</button>
-            <button class="one">1</button>
-            <button class="two">2</button>
-            <button class="three">3</button>
-            <button class="equal">=</button>
+        <div class="display">
+            <div data-first-number class="first-number"></div>
+            <div data-second-number class="second-number"></div>
         </div>
+            <button data-all-clear class="two-span">AC</button>
+            <button data-delete class="two-span">C</button>
+            <button data-operator>x</button>
+            <button data-operator>/</button>
+            <button data-operator>+</button>
+            <button data-operator>-</button>
+            <button data-number>6</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>0</button>
+            <button data-number>1</button>
+            <button data-equal class="two-span">=</button>
     </div>
 </body>
+<script src="/app.js"></script>
 </html>
